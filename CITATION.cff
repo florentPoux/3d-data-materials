@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "3D Data Materials: runnable code for 3D data science tutorials"
+message: "If you use this code in work you publish, please cite it."
+type: software
+abstract: >-
+  Self-contained Python implementations accompanying published tutorials on 3D
+  point cloud processing, LiDAR, Gaussian splatting, meshing and spatial AI.
+  One folder per article, each script readable top to bottom and runnable on a
+  CPU against a named dataset.
+authors:
+  - family-names: Poux
+    given-names: Florent
+    orcid: "https://orcid.org/0000-0001-6368-4399"
+    affiliation: 3D Geodata Academy
+    website: "https://learngeodata.eu"
+repository-code: "https://github.com/florentPoux/3d-data-materials"
+url: "https://learngeodata.eu/materials/"
+license: MIT
+keywords:
+  - 3D point cloud processing
+  - Spatial AI
+  - LiDAR
+  - Photogrammetry
+  - 3D deep learning
+  - Geospatial data science
+  - Gaussian splatting
+  - Python
+references:
+  - type: book
+    title: "3D Data Science with Python: Building Accurate Digital Environments with 3D Point Cloud Workflows"
+    authors:
+      - family-names: Poux
+        given-names: Florent
+        orcid: "https://orcid.org/0000-0001-6368-4399"
+    publisher:
+      name: "O'Reilly Media"
+    year: 2025
+    isbn: "9781098161330"
+    url: "https://www.oreilly.com/library/view/3d-data-science/9781098161323/"

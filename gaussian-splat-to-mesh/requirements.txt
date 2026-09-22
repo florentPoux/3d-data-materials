@@ -1,0 +1,7 @@
+numpy
+scipy
+plyfile
+open3d
+trimesh
+xatlas
+pillow
