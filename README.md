@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.webp" alt="3D Data Materials: the code behind the tutorials" width="900">
+</p>
+
 <h1 align="center">3D Data Materials</h1>
 
 <p align="center">
@@ -6,9 +10,16 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-5856D6" alt="MIT licensed">
+  <img src="https://img.shields.io/badge/python-3.10%2B-5856D6" alt="Python 3.10 or newer">
+  <img src="https://img.shields.io/badge/GPU-not%20required-08e09f" alt="No GPU required">
+  <img src="https://img.shields.io/badge/kits-1-F5B83D" alt="1 kits">
+</p>
+
+<p align="center">
   <a href="https://learngeodata.eu/materials/">Datasets</a> ·
   <a href="https://learngeodata.eu/blog/">Tutorials</a> ·
-  <a href="https://www.oreilly.com/library/view/3d-data-science/9781098161323/">The book</a> ·
+  <a href="https://learngeodata.eu/book/">The book</a> · <a href="https://medium.com/@florentpoux">Medium</a> ·
   <a href="https://learngeodata.eu/about/">About</a>
 </p>
 
@@ -31,9 +42,17 @@ mine.
 
 ## The kits
 
-| Kit | What it does | Data |
-|---|---|---|
-| [Gaussian splat to textured mesh](./gaussian-splat-to-mesh) | Filter, densify and Poisson-mesh a trained 3D Gaussian splat, then bake a real texture. CPU only. | [Get it](https://learngeodata.eu/materials/gaussian-splat-to-mesh/) |
+
+### [Gaussian splat to textured mesh](./gaussian-splat-to-mesh)
+
+<a href="./gaussian-splat-to-mesh"><img src="gaussian-splat-to-mesh/images/01-splat-vs-mesh.webp" alt="The Gaussian splat beside the mesh rebuilt from it" width="380" align="right"></a>
+Filter, densify and Poisson-mesh a trained 3D Gaussian splat, then bake a real texture. CPU only.
+
+- Code: [`gaussian-splat-to-mesh/`](./gaussian-splat-to-mesh)
+- Data: [learngeodata.eu/materials/gaussian-splat-to-mesh/](https://learngeodata.eu/materials/gaussian-splat-to-mesh/)
+
+<br clear="right">
+
 
 ## How to use one
 
@@ -66,7 +85,7 @@ at every step rather than only at the end.
 Dr. Florent Poux is the founder and lead instructor of the 3D Geodata Academy and the author of 3D Data Science with Python (O'Reilly Media, 2025). He holds a PhD in Sciences from the University of Liege, where he was formerly an adjunct professor in 3D geodata, and has spent 15+ years on the automation of reality capture, from point clouds and photogrammetry to spatial AI. His research carries 1,700+ Google Scholar citations across 60+ peer-reviewed publications.
 
 - Website: [learngeodata.eu](https://learngeodata.eu)
-- Book: [3D Data Science with Python](https://www.oreilly.com/library/view/3d-data-science/9781098161323/) (O'Reilly Media, 2025), 690 pages
+- Book: [3D Data Science with Python](https://learngeodata.eu/book/) (O'Reilly Media, 2025), 690 pages
 - ORCID: [0000-0001-6368-4399](https://orcid.org/0000-0001-6368-4399)
 - Google Scholar: [1,700+ citations](https://scholar.google.com/citations?user=eoyJ6eYAAAAJ&hl=en)
 - LinkedIn: [www.linkedin.com/in/florent-poux-point-cloud](https://www.linkedin.com/in/florent-poux-point-cloud/)
@@ -80,7 +99,7 @@ rather than the pieces:
 
 - [The free 3D mission](https://learngeodata.eu/free-mission/), hands-on point cloud
   processing in Python, no cost.
-- [3D Data Science with Python](https://www.oreilly.com/library/view/3d-data-science/9781098161323/), the structured version, 690 pages.
+- [3D Data Science with Python](https://learngeodata.eu/book/), the structured version, 690 pages.
 - [The 3D Geodata Academy](https://learngeodata.eu/resources/), courses for the parts you
   want to go deep on.
 
