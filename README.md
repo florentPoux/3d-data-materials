@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/license-MIT-5856D6" alt="MIT licensed">
   <img src="https://img.shields.io/badge/python-3.10%2B-5856D6" alt="Python 3.10 or newer">
   <img src="https://img.shields.io/badge/GPU-not%20required-08e09f" alt="No GPU required">
-  <img src="https://img.shields.io/badge/kits-1-F5B83D" alt="1 kits">
+  <img src="https://img.shields.io/badge/kits-2-F5B83D" alt="2 kits">
 </p>
 
 <p align="center">
@@ -50,6 +50,18 @@ Filter, densify and Poisson-mesh a trained 3D Gaussian splat, then bake a real t
 
 - Code: [`gaussian-splat-to-mesh/`](./gaussian-splat-to-mesh)
 - Data: [learngeodata.eu/materials/gaussian-splat-to-mesh/](https://learngeodata.eu/materials/gaussian-splat-to-mesh/)
+- Article: [Gaussian splat to textured mesh](https://medium.com/@florentpoux/turn-3d-gaussian-splatting-into-a-textured-mesh-python-no-gpu-5fb461b3d34a)
+
+<br clear="right">
+
+### [LiDAR ground filtering to a terrain model](./lidar-ground-to-dtm)
+
+<a href="./lidar-ground-to-dtm"><img src="lidar-ground-to-dtm/images/01-tile-to-dtm.webp" alt="A LiDAR tile, its ground points and the terrain model built from them" width="380" align="right"></a>
+Read, thin and index a real LiDAR tile, filter the ground, grade it against the survey, write a DTM. CPU only.
+
+- Code: [`lidar-ground-to-dtm/`](./lidar-ground-to-dtm)
+- Data: [learngeodata.eu/materials/lidar-ground-to-dtm/](https://learngeodata.eu/materials/lidar-ground-to-dtm/)
+- Article: [LiDAR ground filtering to a terrain model](https://medium.com/data-science-collective/the-practical-field-guide-to-lidar-point-cloud-processing-f7c3b8ef6d50)
 
 <br clear="right">
 
@@ -72,6 +84,10 @@ at every step rather than only at the end.
   [gaussian-splat-to-mesh](./gaussian-splat-to-mesh). Filtering, spherical
   harmonics to RGB, ellipsoid sampling, Poisson reconstruction and a real texture
   bake. Runs on a CPU.
+- **How do I separate ground from a LiDAR point cloud and build a DTM in Python?**
+  See [lidar-ground-to-dtm](./lidar-ground-to-dtm). laspy, Open3D and a Cloth
+  Simulation Filter on a real IGN LiDAR HD tile, graded against the survey's own
+  ground class, then a GeoTIFF terrain model. No PDAL needed.
 - **Do I need a GPU for 3D reconstruction work?** For training a splat, yes.
   For everything downstream of the trained file, no. The pipelines here are
   classic geometry processing and run on a laptop.
@@ -116,8 +132,9 @@ If this code supports something you publish, please cite it. See
 
 Code in this repository is MIT licensed. See [LICENSE](./LICENSE).
 
-Datasets are distributed from their kit pages under their own terms, stated on
-each page. They are not covered by this repository's license.
+Datasets are distributed from their kit pages under their own terms, listed in
+[DATA_LICENSE.md](./DATA_LICENSE.md). They are not covered by this repository's
+license.
 
 ---
 

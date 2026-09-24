@@ -7,7 +7,7 @@ Filter, densify and Poisson-mesh a trained 3D Gaussian splat, then bake a real t
 <sub>Left, the splat: photoreal and locked to its renderer. Right, the mesh: solid, textured, yours.</sub>
 
 <p>
-  <a href="https://learngeodata.eu/materials/gaussian-splat-to-mesh/"><strong>Get the dataset</strong></a> · <a href="https://medium.com/@florentpoux">More tutorials</a>
+  <a href="https://learngeodata.eu/materials/gaussian-splat-to-mesh/"><strong>Get the dataset</strong></a> · <a href="https://medium.com/@florentpoux/turn-3d-gaussian-splatting-into-a-textured-mesh-python-no-gpu-5fb461b3d34a">Read the article</a> · <a href="https://medium.com/@florentpoux">More tutorials</a>
   · <a href="https://learngeodata.eu/book/">The book</a>
 </p>
 
@@ -33,7 +33,7 @@ Download the scene from the [kit page](https://learngeodata.eu/materials/gaussia
 it next to the script, and run. Every step prints its own numbers, so you can
 check them against the article as you go instead of only at the end.
 
-Requires Python 3.10, numpy, scipy, plyfile, open3d, trimesh, xatlas, pillow.
+Requires Python 3.10, numpy, scipy, plyfile, open3d, trimesh, xatlas, pillow, matplotlib.
 
 
 ## The result
@@ -71,7 +71,8 @@ cloud foundations this script leans on, in Python, at no cost.
 ## License
 
 Code: MIT, see [LICENSE](../LICENSE). The dataset is distributed from the kit
-page under its own terms and is not covered by this repository's license.
+page under its own terms, listed in [DATA_LICENSE.md](../DATA_LICENSE.md), and is
+not covered by this repository's license.
 
 ## Author
 

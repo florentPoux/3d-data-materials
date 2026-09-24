@@ -5,3 +5,4 @@ open3d
 trimesh
 xatlas
 pillow
+matplotlib

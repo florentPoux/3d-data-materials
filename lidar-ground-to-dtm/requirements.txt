@@ -1,0 +1,7 @@
+numpy
+scipy
+laspy[lazrs]
+open3d
+cloth-simulation-filter
+rasterio
+matplotlib

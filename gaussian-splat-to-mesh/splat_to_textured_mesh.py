@@ -7,7 +7,7 @@
 # Copyright (c) 2026 Florent Poux
 #
 # Part of https://github.com/florentPoux/3d-data-materials
-# Article:  https://learngeodata.eu/materials/gaussian-splat-to-mesh/
+# Article:  https://medium.com/@florentpoux/turn-3d-gaussian-splatting-into-a-textured-mesh-python-no-gpu-5fb461b3d34a
 # Dataset:  https://learngeodata.eu/materials/gaussian-splat-to-mesh/
 #
 # Author of 3D Data Science with Python (O'Reilly Media, 2025).
