@@ -1,0 +1,6 @@
+torch>=2.0
+numpy<2
+open3d>=0.18
+scipy>=1.10
+matplotlib>=3.7
+depth-anything-3 @ git+https://github.com/ByteDance-Seed/Depth-Anything-3.git

@@ -12,8 +12,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-5856D6" alt="MIT licensed">
   <img src="https://img.shields.io/badge/python-3.10%2B-5856D6" alt="Python 3.10 or newer">
-  <img src="https://img.shields.io/badge/GPU-not%20required-08e09f" alt="No GPU required">
-  <img src="https://img.shields.io/badge/kits-2-F5B83D" alt="2 kits">
+  <img src="https://img.shields.io/badge/GPU-optional-08e09f" alt="GPU optional">
+  <img src="https://img.shields.io/badge/kits-5-F5B83D" alt="5 kits">
 </p>
 
 <p align="center">
@@ -32,8 +32,8 @@ where those scripts live, one folder per article, each one self-contained and
 commented for reading rather than for cleverness.
 
 No framework, no package to install from here, no abstraction layer between you
-and the geometry. Each folder is a single file you can open, read top to bottom,
-and run.
+and the geometry. Each folder is a script you can open, read top to bottom and
+run, or a pointer to the repository where that script already lives.
 
 The datasets are separate, because a 20 MB point cloud does not belong in git
 history. Each kit's page on learngeodata.eu hands you the scene the script was
@@ -65,6 +65,39 @@ Read, thin and index a real LiDAR tile, filter the ground, grade it against the 
 
 <br clear="right">
 
+### [Open-vocabulary 3D semantics on a real room scan](./open-vocabulary-3d-semantics)
+
+<a href="./open-vocabulary-3d-semantics"><img src="open-vocabulary-3d-semantics/images/01-scan-to-labels.webp" alt="The living-room scan in colour beside the same scan labeled by class" width="380" align="right"></a>
+Lift 2D labels onto a real room scan, fuse them across cameras, vote out the flicker, slice a plan. CPU only; model outputs simulated.
+
+- Code: [`open-vocabulary-3d-semantics/`](./open-vocabulary-3d-semantics)
+- Data: [learngeodata.eu/materials/open-vocabulary-3d-semantics/](https://learngeodata.eu/materials/open-vocabulary-3d-semantics/)
+- Article: [Open-vocabulary 3D semantics on a real room scan](https://medium.com/data-science-collective/turn-video-into-smart-3d-models-the-python-guide-with-sam-clip-and-dino-f4878d4c37dc)
+
+<br clear="right">
+
+### [Label a 3D scene by painting on photos](./3d-scene-labeling-gui)
+
+<a href="./3d-scene-labeling-gui"><img src="3d-scene-labeling-gui/images/01-painted-vs-fused.webp" alt="A toy set point cloud with sparse painted labels beside the same cloud after label fusion" width="380" align="right"></a>
+Paint labels on photos with an OpenCV brush, project them to 3D through the cameras, spread them with a KD-tree, export PLY and GLB. CPU only.
+
+- Code: [`3d-scene-labeling-gui/`](./3d-scene-labeling-gui)
+- Data: [learngeodata.eu/materials/3d-scene-labeling-gui/](https://learngeodata.eu/materials/3d-scene-labeling-gui/)
+- Article: [Label a 3D scene by painting on photos](https://medium.com/data-science-collective/how-to-build-a-python-gui-for-3d-scene-labeling-49dd43624a7f)
+
+<br clear="right">
+
+### [3D models from photos with Depth-Anything-3](./3d-models-from-images)
+
+<a href="./3d-models-from-images"><img src="3d-models-from-images/images/01-photos-to-point-cloud.webp" alt="Nine phone photos of a toy set and the 3D point cloud rebuilt from them" width="380" align="right"></a>
+Depth, camera poses, a registered point cloud, ground and object segmentation, a voxel mesh and a GLB, from nine phone photos.
+
+- Code: [`3d-models-from-images/`](./3d-models-from-images), which points to [florentPoux/3d-reconstruction-depth-anything](https://github.com/florentPoux/3d-reconstruction-depth-anything), where the script lives
+- Data: [learngeodata.eu/materials/3d-models-from-images/](https://learngeodata.eu/materials/3d-models-from-images/)
+- Article: [3D models from photos with Depth-Anything-3](https://medium.com/data-science-collective/how-to-generate-3d-models-from-images-with-python-b92b7d549801)
+
+<br clear="right">
+
 
 ## How to use one
 
@@ -91,7 +124,9 @@ at every step rather than only at the end.
 - **Do I need a GPU for 3D reconstruction work?** For training a splat, yes.
   For everything downstream of the trained file, no. The pipelines here are
   classic geometry processing and run on a laptop.
-- **Where do the datasets come from?** Real captures, not toy data. Each kit
+- **How do I label a 3D point cloud without clicking on points?** Paint on the photos instead. [3d-scene-labeling-gui](./3d-scene-labeling-gui) projects brush strokes on five photos through the camera geometry and a KD-tree spreads them to the rest of the scene. CPU only.
+- **Do I need a GPU to turn photos into a 3D model?** It helps. In [3d-models-from-images](./3d-models-from-images), Depth-Anything-3 turns nine photos into depth maps and camera poses in about a second of model time on an RTX 3090, 21 seconds for the whole pipeline, and the script falls back to the CPU on its own.
+- **Where do the datasets come from?** Real captures, not synthetic data. Each kit
   names its scene and its size on the kit page.
 - **Can I use this code at work?** Yes. MIT licensed, see [LICENSE](./LICENSE).
   Attribution is appreciated, not required.
