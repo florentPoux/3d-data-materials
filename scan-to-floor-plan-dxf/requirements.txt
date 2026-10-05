@@ -1,0 +1,7 @@
+numpy
+scipy
+scikit-image
+shapely
+ezdxf
+open3d
+pytest

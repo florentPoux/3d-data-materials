@@ -8,6 +8,19 @@ here. They are distributed from each kit's page on learngeodata.eu
 own terms, listed below. They are not covered by the MIT license.
 
 
+## Scan to floor plan, from wall pixels to a DXF
+
+Kit page: [learngeodata.eu/materials/scan-to-floor-plan-dxf/](https://learngeodata.eu/materials/scan-to-floor-plan-dxf/)
+
+| File | Terms |
+|---|---|
+| `classroom_scene.ply` | Created by Florent Poux and distributed from the kit page for use with this kit. Not MIT licensed. |
+| `floor_plan.dxf` | Created by Florent Poux and distributed from the kit page for use with this kit. Not MIT licensed. |
+| `metrics.json` | Created by Florent Poux and distributed from the kit page for use with this kit. Not MIT licensed. |
+
+Attribution: The classroom scan is the example scene that ships with Neurones 3D, classified into seven classes (created in CloudCompare, November 2025).
+
+
 ## Gaussian splat to textured mesh
 
 Kit page: [learngeodata.eu/materials/gaussian-splat-to-mesh/](https://learngeodata.eu/materials/gaussian-splat-to-mesh/)

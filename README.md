@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/license-MIT-5856D6" alt="MIT licensed">
   <img src="https://img.shields.io/badge/python-3.10%2B-5856D6" alt="Python 3.10 or newer">
   <img src="https://img.shields.io/badge/GPU-optional-08e09f" alt="GPU optional">
-  <img src="https://img.shields.io/badge/kits-5-F5B83D" alt="5 kits">
+  <img src="https://img.shields.io/badge/kits-6-F5B83D" alt="6 kits">
 </p>
 
 <p align="center">
@@ -42,6 +42,17 @@ mine.
 
 ## The kits
 
+
+### [Scan to floor plan, from wall pixels to a DXF](./scan-to-floor-plan-dxf)
+
+<a href="./scan-to-floor-plan-dxf"><img src="scan-to-floor-plan-dxf/images/01-pixels-to-lines.webp" alt="A classroom's walls as grid pixels beside the same walls as four vector lines" width="380" align="right"></a>
+Turn the wall points of a classified room scan into clean vector walls and a layered DXF any CAD tool opens. CPU only.
+
+- Code: [`scan-to-floor-plan-dxf/`](./scan-to-floor-plan-dxf)
+- Data: [learngeodata.eu/materials/scan-to-floor-plan-dxf/](https://learngeodata.eu/materials/scan-to-floor-plan-dxf/)
+- Article: [Scan to floor plan, from wall pixels to a DXF](https://medium.com/data-science-collective/how-to-turn-a-3d-scan-into-a-cad-floor-plan-f38562744833)
+
+<br clear="right">
 
 ### [Gaussian splat to textured mesh](./gaussian-splat-to-mesh)
 
@@ -103,7 +114,7 @@ Depth, camera poses, a registered point cloud, ground and object segmentation, a
 
 ```bash
 git clone https://github.com/florentPoux/3d-data-materials.git
-cd 3d-data-materials/gaussian-splat-to-mesh
+cd 3d-data-materials/scan-to-floor-plan-dxf
 pip install -r requirements.txt
 ```
 
