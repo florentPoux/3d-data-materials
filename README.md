@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/license-MIT-5856D6" alt="MIT licensed">
   <img src="https://img.shields.io/badge/python-3.10%2B-5856D6" alt="Python 3.10 or newer">
   <img src="https://img.shields.io/badge/GPU-optional-08e09f" alt="GPU optional">
-  <img src="https://img.shields.io/badge/kits-6-F5B83D" alt="6 kits">
+  <img src="https://img.shields.io/badge/kits-7-F5B83D" alt="7 kits">
 </p>
 
 <p align="center">
@@ -42,6 +42,17 @@ mine.
 
 ## The kits
 
+
+### [Wall thickness from a scan, written to IFC](./wall-thickness-to-ifc)
+
+<a href="./wall-thickness-to-ifc"><img src="wall-thickness-to-ifc/images/01-ifc-walls-over-scan.webp" alt="Three IFC wall solids read back from the file, standing among the office wall points" width="380" align="right"></a>
+Find the two faces of a wall as density peaks, pair them, measure the gap cell by cell, write an IfcWall and prove it. CPU only.
+
+- Code: [`wall-thickness-to-ifc/`](./wall-thickness-to-ifc)
+- Data: [learngeodata.eu/materials/wall-thickness-to-ifc/](https://learngeodata.eu/materials/wall-thickness-to-ifc/)
+- Article: [Wall thickness from a scan, written to IFC](https://medium.com/data-science-collective/3d-scan-to-bim-101-hands-on-automation-course-92f9e45acd7d)
+
+<br clear="right">
 
 ### [Scan to floor plan, from wall pixels to a DXF](./scan-to-floor-plan-dxf)
 
@@ -114,7 +125,7 @@ Depth, camera poses, a registered point cloud, ground and object segmentation, a
 
 ```bash
 git clone https://github.com/florentPoux/3d-data-materials.git
-cd 3d-data-materials/scan-to-floor-plan-dxf
+cd 3d-data-materials/wall-thickness-to-ifc
 pip install -r requirements.txt
 ```
 

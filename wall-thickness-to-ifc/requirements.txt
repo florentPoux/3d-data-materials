@@ -1,0 +1,7 @@
+numpy
+scipy
+ifcopenshell
+open3d
+pandas
+plyfile
+pytest

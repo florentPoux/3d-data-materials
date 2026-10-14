@@ -8,6 +8,21 @@ here. They are distributed from each kit's page on learngeodata.eu
 own terms, listed below. They are not covered by the MIT license.
 
 
+## Wall thickness from a scan, written to IFC
+
+Kit page: [learngeodata.eu/materials/wall-thickness-to-ifc/](https://learngeodata.eu/materials/wall-thickness-to-ifc/)
+
+| File | Terms |
+|---|---|
+| `measured_partitions.ifc` | Created by Florent Poux and distributed from the kit page for use with this kit. Not MIT licensed. |
+| `result.json` | Created by Florent Poux and distributed from the kit page for use with this kit. Not MIT licensed. |
+
+Attribution: Reference outputs computed by Florent Poux from S3DIS, Area 1: I. Armeni, O. Sener, A. R. Zamir, H. Jiang, I. Brilakis, M. Fischer, S. Savarese, 3D Semantic Parsing of Large-Scale Indoor Spaces, CVPR 2016.
+
+Source data, not redistributed here or on the kit page:
+[S3DIS, the Stanford Large-Scale 3D Indoor Spaces dataset](http://buildingparser.stanford.edu/dataset.html). Its terms: Stanford's registration form: "I will not redistribute the dataset in any way and in any format. Any new access will be established through this form and/or authors' official method of releasing the dataset. I agree that the data and derivatives will be used only for non-commercial research and academic purposes."
+
+
 ## Scan to floor plan, from wall pixels to a DXF
 
 Kit page: [learngeodata.eu/materials/scan-to-floor-plan-dxf/](https://learngeodata.eu/materials/scan-to-floor-plan-dxf/)
