@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/license-MIT-5856D6" alt="MIT licensed">
   <img src="https://img.shields.io/badge/python-3.10%2B-5856D6" alt="Python 3.10 or newer">
   <img src="https://img.shields.io/badge/GPU-optional-08e09f" alt="GPU optional">
-  <img src="https://img.shields.io/badge/kits-7-F5B83D" alt="7 kits">
+  <img src="https://img.shields.io/badge/kits-8-F5B83D" alt="8 kits">
 </p>
 
 <p align="center">
@@ -42,6 +42,17 @@ mine.
 
 ## The kits
 
+
+### [Wheelchair accessibility audit from a 3D scan](./wheelchair-accessibility-audit)
+
+<a href="./wheelchair-accessibility-audit"><img src="wheelchair-accessibility-audit/images/01-issue-plan.webp" alt="The accessibility checklist with 26 issues numbered on the floor plan" width="380" align="right"></a>
+Clear width by distance transform, turning space by morphological opening, reach by connected components, then a numbered issue list. CPU only.
+
+- Code: [`wheelchair-accessibility-audit/`](./wheelchair-accessibility-audit)
+- Data: [learngeodata.eu/materials/wheelchair-accessibility-audit/](https://learngeodata.eu/materials/wheelchair-accessibility-audit/)
+- Article: [Wheelchair accessibility audit from a 3D scan](https://medium.com/data-science-collective/how-to-automate-3d-deliverables-accessibility-map-from-3d-scan-3ecef96a5a6f)
+
+<br clear="right">
 
 ### [Wall thickness from a scan, written to IFC](./wall-thickness-to-ifc)
 
@@ -125,7 +136,7 @@ Depth, camera poses, a registered point cloud, ground and object segmentation, a
 
 ```bash
 git clone https://github.com/florentPoux/3d-data-materials.git
-cd 3d-data-materials/wall-thickness-to-ifc
+cd 3d-data-materials/wheelchair-accessibility-audit
 pip install -r requirements.txt
 ```
 
