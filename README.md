@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/license-MIT-5856D6" alt="MIT licensed">
   <img src="https://img.shields.io/badge/python-3.10%2B-5856D6" alt="Python 3.10 or newer">
   <img src="https://img.shields.io/badge/GPU-optional-08e09f" alt="GPU optional">
-  <img src="https://img.shields.io/badge/kits-8-F5B83D" alt="8 kits">
+  <img src="https://img.shields.io/badge/kits-9-F5B83D" alt="9 kits">
 </p>
 
 <p align="center">
@@ -42,6 +42,17 @@ mine.
 
 ## The kits
 
+
+### [Walking distance to the nearest exit, from a scan](./evacuation-distance-map)
+
+<a href="./evacuation-distance-map"><img src="evacuation-distance-map/images/01-distance-field.webp" alt="Walking distance to the nearest exit over the whole S3DIS Area 1 floor" width="380" align="right"></a>
+One multi-source Dijkstra from the exits over a 16-neighbour grid, routes by descent, dead-end corridors from graph bridges, and a what-if for every blocked door. CPU only.
+
+- Code: [`evacuation-distance-map/`](./evacuation-distance-map)
+- Data: [learngeodata.eu/materials/evacuation-distance-map/](https://learngeodata.eu/materials/evacuation-distance-map/)
+- Article: [Walking distance to the nearest exit, from a scan](https://medium.com/data-science-collective/how-to-build-a-2d-map-and-3d-evacuation-simulation-from-3d-scan-data-python-a4d7e71c0f0c)
+
+<br clear="right">
 
 ### [Wheelchair accessibility audit from a 3D scan](./wheelchair-accessibility-audit)
 
@@ -136,7 +147,7 @@ Depth, camera poses, a registered point cloud, ground and object segmentation, a
 
 ```bash
 git clone https://github.com/florentPoux/3d-data-materials.git
-cd 3d-data-materials/wheelchair-accessibility-audit
+cd 3d-data-materials/evacuation-distance-map
 pip install -r requirements.txt
 ```
 

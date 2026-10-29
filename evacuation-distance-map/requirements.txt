@@ -1,0 +1,9 @@
+numpy
+scipy
+scikit-image
+networkx
+plyfile
+open3d
+matplotlib
+pandas
+pytest
